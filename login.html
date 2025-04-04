@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | Campus Marketplace</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #2c3e50; color: white; text-align: center; padding: 10px 0; }
+    main { padding: 40px; max-width: 400px; margin: auto; }
+    form { display: flex; flex-direction: column; }
+    input, button { margin-bottom: 15px; padding: 10px; font-size: 16px; }
+    button { background-color: #3498db; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Campus Marketplace</h1>
+  </header>
+
+  <main>
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+      <input type="email" name="email" placeholder="UNC Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Campus Marketplace | UNC</p>
+  </footer>
+</body>
+</html>

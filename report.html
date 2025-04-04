@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Report Listing | Campus Marketplace</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; }
+    header, footer { background-color: #2c3e50; color: white; text-align: center; padding: 10px; }
+    main { padding: 40px; max-width: 600px; margin: auto; }
+    form { display: flex; flex-direction: column; gap: 15px; }
+    input, textarea, button { padding: 10px; font-size: 16px; }
+    button { background-color: #e74c3c; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Campus Marketplace</h1>
+  </header>
+
+  <main>
+    <h2>Report a Listing</h2>
+    <form action="/report" method="POST">
+      <input type="text" name="itemId" placeholder="Item ID" required />
+      <textarea name="reason" placeholder="Describe the issue..." rows="5" required></textarea>
+      <button type="submit">Submit Report</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Campus Marketplace | UNC</p>
+  </footer>
+</body>
+</html>
